@@ -23,13 +23,13 @@ public class ProductService {
     }
 
     public Product addProduct(Product product) {
-        product.setStatus("Pending");
+        product.setStatus("pending");
         return productRepository.save(product);
     }
 
     public Product updateProduct(Long id, Product product) {
         product.setId(id);
-        product.setStatus("Pending");
+        product.setStatus("pending");
         return productRepository.save(product);
     }
 

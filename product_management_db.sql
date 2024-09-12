@@ -9,7 +9,7 @@ alter default privileges grant all on sequences to user_admin;
 create table product(
 	id serial4 NOT NULL,
 	name varchar(20) not null default '',
-	price numeric(38,2),
+	price numeric(38,2) DEFAULT 0,
 	status varchar(20) NOT NULL DEFAULT '',
 	description varchar(50) NOT NULL DEFAULT '',
 	CONSTRAINT product_pkey PRIMARY KEY (id)
